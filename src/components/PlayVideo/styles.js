@@ -7,19 +7,16 @@ export const Container = styled.div`
   height: 100vh;
 
   video {
-    width: 100%;
-    height: 50vh;
+    height: 60vh;
   }
 `;
 
 export const VideoWrapper = styled.div`
   width: 100%;
   background-color: #000000;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
   border-radius: 10px;
 `;
 
@@ -28,10 +25,14 @@ export const Progress = styled.input`
   -webkit-appearance: none;
   /* estiliza o marcador móvel */
   ::-webkit-slider-thumb {
-    background: #ff0000;
+    -webkit-appearance: none;
   }
 
   :hover::-webkit-slider-thumb {
+    background: red;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
   }
 
   /* estiliza a a barra do slider */
@@ -75,30 +76,33 @@ export const Volume = styled.button`
   display: flex;
   align-items: center;
   margin-right: 20rem;
+
   input[type="range"] {
     -webkit-appearance: none; /* remove estilo padrão do browser */
   }
 
   /* estiliza o marcador móvel */
+
   input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none; /* remove estilo padrão do browser */
-    background: #ffffff;
+    background: #f1f1f1;
     height: 15px;
-    width: 10px;
+    width: 15px;
+    border-radius: 50%;
   }
 
   /* estiliza a a barra do slider */
   input[type="range"]::-webkit-slider-runnable-track {
     width: 100%;
     height: 5px;
-    background: #ffffff;
+    background: #0f0f0f;
   }
 `;
 
 export const Gear = styled.div`
   cursor: pointer;
+
   > select {
-    position: relative;
     display: none;
   }
   :hover {
@@ -116,6 +120,7 @@ export const FullScreen = styled.button`
 export const Info = styled.div`
   background-color: #0f0f0f;
   color: #f1f1f1;
+  padding-left: 25px;
 `;
 
 export const Title = styled.div`
@@ -123,9 +128,13 @@ export const Title = styled.div`
 `;
 
 export const Description = styled.div`
-  background: #3f3f3f;
+  background: #222222;
   color: #f1f1f1;
   padding: 1px 10px;
   border-radius: 10px;
   margin: 10px;
+
+  :hover {
+    background: #3f3f3f;
+  }
 `;

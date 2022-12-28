@@ -6,16 +6,10 @@ export const Main = styled.div`
   width: 100%;
 `;
 
-export const Video = styled.div`
-  height: 100vh;
-  background: blue;
-  width: 100%;
-`;
-
 export const Container = styled.div`
   height: 100vh;
-  width: 700px;
-  background-color: black;
+  width: 100%;
+  background: #0f0f0f;
   color: grey;
   display: flex;
   flex-direction: column;
@@ -24,17 +18,22 @@ export const Container = styled.div`
 export const Box = styled.div`
   display: flex;
   margin: 10px;
-  gap: 10px;
   height: 100px;
+  cursor: pointer;
+  gap: 10px;
   img {
-    display: block;
-    width: 140px;
+    width: 200px;
     border-radius: 10px;
   }
 `;
 
 export const Description = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
-  justify-content: space-evenly;
+
+  h3 {
+    color: #f1f1f1;
+  }
 `;

@@ -84,10 +84,10 @@ export const ListVideo = () => {
               <img src={thumb} />
               <S.Description>
                 <h3>{title}</h3>
-                <p>{channel}</p>
-                <span>
+                <span>{channel}</span>
+                <p>
                   {views} - {updateData}
-                </span>
+                </p>
               </S.Description>
             </S.Box>
           )
