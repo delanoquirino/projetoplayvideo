@@ -5,7 +5,6 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #0f0f0f;
 
   video {
     width: 100%;
@@ -26,17 +25,25 @@ export const VideoWrapper = styled.div`
 
 export const Progress = styled.input`
   width: 100%;
+  -webkit-appearance: none;
+  /* estiliza o marcador móvel */
   ::-webkit-slider-thumb {
-    -webkit-appearance: none; /* remove estilo padrão do browser */
-    background: red;
-    height: 10px;
-    width: 10px;
+    background: #ff0000;
   }
-  /* Firefox */
-  ::-moz-range-thumb {
-    background: red;
-    height: 15px;
-    width: 10px;
+
+  :hover::-webkit-slider-thumb {
+  }
+
+  /* estiliza a a barra do slider */
+  ::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    background: #ff0000;
+    cursor: pointer;
+  }
+
+  :hover::-webkit-slider-runnable-track {
+    height: 5px;
   }
 `;
 
@@ -68,16 +75,26 @@ export const Volume = styled.button`
   display: flex;
   align-items: center;
   margin-right: 20rem;
-  > input {
-    visibility: hidden;
-    transition: width 0.2s;
+  input[type="range"] {
+    -webkit-appearance: none; /* remove estilo padrão do browser */
   }
-  :hover {
-    > input {
-      visibility: visible;
-    }
+
+  /* estiliza o marcador móvel */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* remove estilo padrão do browser */
+    background: #ffffff;
+    height: 15px;
+    width: 10px;
+  }
+
+  /* estiliza a a barra do slider */
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    background: #ffffff;
   }
 `;
+
 export const Gear = styled.div`
   cursor: pointer;
   > select {
