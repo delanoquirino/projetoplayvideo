@@ -9,6 +9,7 @@ export const Container = styled.div`
 
   video {
     width: 100%;
+    height: 50vh;
   }
 `;
 

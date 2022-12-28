@@ -15,7 +15,8 @@ import { useVideoPlayer } from "../../hooks/useVideoPlayer";
 //styles
 import * as S from "./styles";
 
-const video = "https://www.youtube.com/watch?v=YZNaRkRgbio&t=1s";
+const video =
+  "https://rr2---sn-4voux-uixs.googlevideo.com/videoplayback?expire=1672219217&ei=0ZmrY8eUJeP0zLUP0fWo6Ak&ip=2804:28c8:c330:4601:e413:af57:998f:cd69&id=7e5872b9b785c6c0&itag=18&source=blogger&mh=Ob&mm=31&mn=sn-4voux-uixs&ms=au&mv=m&mvi=2&pl=43&susc=bl&eaua=bF5a0V42SMY&mime=video/mp4&vprv=1&dur=1476.487&lmt=1672073947567279&mt=1672189993&txp=1311224&sparams=expire,ei,ip,id,itag,source,susc,eaua,mime,vprv,dur,lmt&sig=AOq0QJ8wRQIhAK5NyFhFUErEw73jhkXLQax0mWW7-_8EnpbuwC9AKNGpAiAkv77iZNs6YYpGFtPURdSbTGAJvid-kuQZpwLlmEzC4Q%3D%3D&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRAIgHF0vWP4x5RSnXh_PXwe_MbxPM36m4RE3oun6oc8pY9ACIGYanDx0r3zXriC8zrZdnpY1h00tc0tDhw9YVKmY_z-L&cpn=umE5VqsEZFRiSFMf&c=WEB_EMBEDDED_PLAYER&cver=1.20221218.00.00";
 
 export const PlayVideo = () => {
   const videoElement = useRef(null);

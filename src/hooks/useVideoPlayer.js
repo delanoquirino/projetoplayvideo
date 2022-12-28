@@ -8,24 +8,18 @@ export const useVideoPlayer = (videoElement) => {
     isMuted: false,
   });
 
-  useEffect(() => {
-    playerState.isPlaying
-      ? videoElement.current.play()
-      : videoElement.current.pause();
-  }, [playerState.isPlaying, videoElement]);
-
-  useEffect(() => {
-    playerState.isMuted
-      ? (videoElement.current.muted = true)
-      : (videoElement.current.muted = false);
-  }, [playerState.isMuted, videoElement]);
-
   const togglePlay = () => {
     setPlayerState({
       ...playerState,
       isPlaying: !playerState.isPlaying,
     });
   };
+
+  useEffect(() => {
+    playerState.isPlaying
+      ? videoElement.current.play()
+      : videoElement.current.pause();
+  }, [playerState.isPlaying, videoElement]);
 
   const handleOnTimeUpdate = () => {
     const progress =
@@ -38,7 +32,7 @@ export const useVideoPlayer = (videoElement) => {
 
   const handleVideoProgress = (event) => {
     const manualChange = Number(event.target.value);
-    videoElement.currentTime =
+    videoElement.current.currentTime =
       (videoElement.current.duration / 100) * manualChange;
     setPlayerState({
       ...playerState,
@@ -61,6 +55,12 @@ export const useVideoPlayer = (videoElement) => {
       isMuted: !playerState.isMuted,
     });
   };
+
+  useEffect(() => {
+    playerState.isMuted
+      ? (videoElement.current.muted = true)
+      : (videoElement.current.muted = false);
+  }, [playerState.isMuted, videoElement]);
 
   const toggleFullscreen = () => {
     if (videoElement.current.requestFullscreen) {
