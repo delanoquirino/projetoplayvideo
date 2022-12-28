@@ -5,6 +5,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 70%;
 
   video {
     height: 60vh;
@@ -101,14 +102,23 @@ export const Volume = styled.button`
 
 export const Gear = styled.div`
   cursor: pointer;
+  position: relative;
 
-  > select {
-    display: none;
+  > div {
+    visibility: hidden;
   }
+
   :hover {
-    select {
-      display: block;
+    div {
+      visibility: visible;
     }
+  }
+  div {
+    background-color: red;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    height: 50px;
   }
 `;
 

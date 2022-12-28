@@ -87,5 +87,6 @@ export const useVideoPlayer = (videoElement) => {
     toggleMute,
     toggleFullscreen,
     toggleVolume,
+    setPlayerState,
   };
 };
