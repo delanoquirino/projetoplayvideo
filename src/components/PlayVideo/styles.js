@@ -3,50 +3,27 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 1rem;
   height: 100vh;
-  width: 70%;
-
-  video {
-    height: 60vh;
+  @media (max-width: 1024px) {
+    width: 100%;
   }
 `;
 
 export const VideoWrapper = styled.div`
-  width: 100%;
   background-color: #000000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
+
+  @media (max-width: 1350px) {
+    width: 100%;
+  }
 `;
 
 export const Progress = styled.input`
   width: 100%;
-  -webkit-appearance: none;
-  /* estiliza o marcador móvel */
-  ::-webkit-slider-thumb {
-    -webkit-appearance: none;
-  }
-
-  :hover::-webkit-slider-thumb {
-    background: red;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-  }
-
-  /* estiliza a a barra do slider */
-  ::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 3px;
-    background: #ff0000;
-    cursor: pointer;
-  }
-
-  :hover::-webkit-slider-runnable-track {
-    height: 5px;
-  }
 `;
 
 export const Controls = styled.div`
@@ -78,25 +55,14 @@ export const Volume = styled.button`
   align-items: center;
   margin-right: 20rem;
 
-  input[type="range"] {
-    -webkit-appearance: none; /* remove estilo padrão do browser */
+  input {
+    visibility: hidden;
   }
 
-  /* estiliza o marcador móvel */
-
-  input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none; /* remove estilo padrão do browser */
-    background: #f1f1f1;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-  }
-
-  /* estiliza a a barra do slider */
-  input[type="range"]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 5px;
-    background: #0f0f0f;
+  :hover {
+    input {
+      visibility: visible;
+    }
   }
 `;
 
@@ -104,22 +70,14 @@ export const Gear = styled.div`
   cursor: pointer;
   position: relative;
 
-  > div {
-    visibility: hidden;
-  }
-
   :hover {
     div {
       visibility: visible;
     }
   }
-  div {
-    background-color: red;
-    position: absolute;
-    right: 100px;
-    bottom: 100px;
-    height: 50px;
-  }
+`;
+export const Speed = styled.div`
+  visibility: hidden;
 `;
 
 export const FullScreen = styled.button`

@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
+  height: 100vh;
+  width: 100%;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1224px) {
     flex-direction: column;
   }
 `;
@@ -11,30 +13,37 @@ export const Container = styled.div`
 export const Main = styled.div`
   display: flex;
   flex-direction: row;
-  width: 40%;
-
+  font-size: 70%;
+  width: max-content;
   a {
     text-decoration: none;
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
   }
 `;
 
 export const ListContainer = styled.div`
-  height: 100vh;
-  width: 100%;
-  background: #0f0f0f;
-
   display: flex;
   flex-direction: column;
+  width: 100%;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+
+    margin-left: 2rem;
+  }
 `;
+
+export const Filter = styled.div``;
 
 export const Box = styled.div`
   display: flex;
-  margin: 10px;
-  height: 100px;
+  margin: 5px;
   cursor: pointer;
   gap: 10px;
   img {
-    width: 200px;
+    width: 160px;
     border-radius: 10px;
   }
   span,
@@ -45,10 +54,9 @@ export const Box = styled.div`
 
 export const Description = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: column;
-
+  width: 100%;
   h3 {
     color: #f1f1f1;
   }

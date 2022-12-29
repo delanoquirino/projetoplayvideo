@@ -1,16 +1,15 @@
 export const playlist = [
   {
     id: 1,
-    title: "Titulo do Video 1",
+    title: "NATUREZA EM MOVIMENTO",
     channel: "Canal 1",
     views: "20 mil",
     updateData: "há 4 dias",
     thumb:
       "https://i.ytimg.com/vi/En20Y8PSWjk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBbF7VvQZ76YamGEso2ELqXjgOfYw",
-    videoUrl:
-      "https://rr1---sn-4voux-uixl.googlevideo.com/videoplayback?expire=1672262784&ei=AESsY7aXIISa0_wPtMaHiAM&ip=2804:28c8:c330:4601:f16a:8f31:41fb:6173&id=6af20c4ad2149c86&itag=18&source=blogger&mh=3c&mm=31&mn=sn-4voux-uixl&ms=au&mv=m&mvi=1&pl=43&susc=bl&eaua=bF5a0V42SMY&mime=video/mp4&vprv=1&dur=1430.790&lmt=1671936675830896&mt=1672233439&txp=1311224&sparams=expire,ei,ip,id,itag,source,susc,eaua,mime,vprv,dur,lmt&sig=AOq0QJ8wRQIhAMykCNF2vw_MtPIQG9lfGy_8bv2FbBdKANzNGERDGpUhAiBn8DF3k04zCuQYNDfTxDCkzkdMMie1t7Y-cIz1vvOb2w%3D%3D&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAMj7KKqCFXL0mIET4WgOjfUMTLb7I63pn_XL2_VA8Dm_AiEAipECufWnmHnTxagjaBatqCBCBXxuvB3W38_dSsK_bYo%3D&cpn=thx6fKj4koTg9JFt&c=WEB_EMBEDDED_PLAYER&cver=1.20221218.00.00",
+    videoUrl: "",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad ex excepturi debitis quas magnam. Odit, in! Repellendus, minus inventore doloribus officia quasi vero expedita optio ut provident impedit maiores dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, maiores obcaecati! Praesentium eaque numquam sunt nemo error asperiores eveniet laboriosam fugiat a. Voluptatum sit nulla consectetur nobis recusandae error expedita! ",
+      "Precisa de alguma inspiração para seu próximo projeto? Cenas 100% feitas com o equipamento estabilizador gimbal Moviecam. Video sem pós estabilização. Informação para locação: www.moviecam.com.br",
   },
   {
     id: 2,
@@ -93,7 +92,7 @@ export const playlist = [
   {
     id: 8,
     title: "Titulo do Video 8",
-    channel: "Canal 8",
+    channel: "Movie Cam",
     views: "230 mil",
     updateData: "há 114 dias",
     thumb:

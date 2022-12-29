@@ -15,7 +15,7 @@ import { useVideoPlayer } from "../../hooks/useVideoPlayer";
 //styles
 import * as S from "./styles";
 
-export const PlayVideo = ({ title, videoUrl, description }) => {
+export const PlayVideo = ({ title, videoUrl, description, active }) => {
   const videoElement = useRef(null);
   const {
     playerState,
@@ -54,6 +54,7 @@ export const PlayVideo = ({ title, videoUrl, description }) => {
             value={playerState.progress}
             onChange={(e) => handleVideoProgress(e)}
           />
+
           <S.Controls>
             <div>
               <S.Actions>
@@ -94,7 +95,7 @@ export const PlayVideo = ({ title, videoUrl, description }) => {
             <div>
               <S.Gear>
                 <GearSix size={28} color="#FFFFFF" weight="thin" />
-                <div>
+                <S.Speed>
                   <select
                     value={playerState.speed}
                     onChange={(e) => handleVideoSpeed(e)}
@@ -105,7 +106,7 @@ export const PlayVideo = ({ title, videoUrl, description }) => {
                     <option value="2">2x</option>
                     <option value="3">3x</option>
                   </select>
-                </div>
+                </S.Speed>
               </S.Gear>
               <S.FullScreen onClick={toggleFullscreen}>
                 <CornersOut size={28} color="#FFFFFF" weight="thin" />

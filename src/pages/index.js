@@ -1,10 +1,7 @@
 import { useState, useRef } from "react";
 
 import { PlayVideo } from "../components/PlayVideo";
-
 import { playlist } from "../mocks/playlist";
-
-import { useVideoPlayer } from "../hooks/useVideoPlayer";
 
 import * as S from "../styles/pages/home";
 
@@ -22,33 +19,39 @@ export default function Home() {
   return (
     <>
       <S.Container>
-        <PlayVideo
-          title={activeVideo.title}
-          description={activeVideo.description}
-          videoUrl={activeVideo.videoUrl}
-        />
+        <div>
+          <PlayVideo
+            title={activeVideo.title}
+            description={activeVideo.description}
+            videoUrl={activeVideo.videoUrl}
+          />
+        </div>
 
-        <S.Main>
-          <S.ListContainer>
-            {playlist.map((item) => (
-              <S.Box
-                key={item.id}
-                onClick={() =>
-                  selectVideo(item.title, item.videoUrl, item.description)
-                }
-              >
-                <img src={item.thumb} />
-                <S.Description>
-                  <h3>{item.title}</h3>
-                  <span>{item.channel}</span>
-                  <p>
-                    {item.views} - {item.updateData}
-                  </p>
-                </S.Description>
-              </S.Box>
-            ))}
-          </S.ListContainer>
-        </S.Main>
+        <div>
+          <S.Main>
+            <S.ListContainer>
+              {playlist.map((item) => (
+                <div>
+                  <S.Box
+                    key={item.id}
+                    onClick={() =>
+                      selectVideo(item.title, item.videoUrl, item.description)
+                    }
+                  >
+                    <img src={item.thumb} />
+                    <S.Description>
+                      <h3>{item.title}</h3>
+                      <span>{item.channel}</span>
+                      <p>
+                        {item.views} - {item.updateData}
+                      </p>
+                    </S.Description>
+                  </S.Box>
+                </div>
+              ))}
+            </S.ListContainer>
+          </S.Main>
+        </div>
       </S.Container>
     </>
   );
