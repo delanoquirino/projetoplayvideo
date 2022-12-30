@@ -35,7 +35,7 @@ export default function Home() {
       <S.Main>
         <S.ListContainer>
           {playlist.map((item) => (
-            <div key={i}>
+            <div>
               <S.Box
                 key={item.id}
                 onClick={() =>
