@@ -58,7 +58,7 @@ export const playlist = [
     category: "animais",
     thumb:
       "https://i.ytimg.com/vi/CY0O03pTnT4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBXEgUCsb5VjCv8KUU1Rk0PymtqnA",
-    videoUrl: "/pets.mp4.mp4",
+    videoUrl: "/pets.mp4",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad ex excepturi debitis quas magnam. Odit, in! Repellendus, minus inventore doloribus officia quasi vero expedita optio ut provident impedit maiores dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, maiores obcaecati! Praesentium eaque numquam sunt nemo error asperiores eveniet laboriosam fugiat a. Voluptatum sit nulla consectetur nobis recusandae error expedita! ",
   },
@@ -81,7 +81,7 @@ export const playlist = [
     channel: "Canal 7",
     views: "150 mil",
     updateData: "há 30 dias",
-    category: "carros",
+    category: "animais",
     thumb:
       "https://i.ytimg.com/vi/CHUbc76FJlY/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDpcI4DyTtQJlvG0dASESF57csXiw",
     videoUrl: "animais-pet.mp4",

@@ -27,14 +27,11 @@ export const ListContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-left: 2rem;
   @media (max-width: 1024px) {
     flex-direction: column;
-
-    margin-left: 2rem;
   }
 `;
-
-export const Filter = styled.div``;
 
 export const Box = styled.div`
   display: flex;
