@@ -18,4 +18,4 @@ This challenge was developed for a contracting process for a job opportunity as 
 
 ### Layout
 
-![layout](/)
+![layout](/logo.png)
