@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
 import { VideoPlayer } from "../components/VideoPlayer";
@@ -8,15 +8,15 @@ import * as S from "../styles/pages/home";
 
 export default function Home() {
   const [activeVideo, setActiveVideo] = useState({
-    title: playlist[0].title,
+    titleVideo: playlist[0].title,
     description: playlist[0].description,
     videoUrl: playlist[0].videoUrl,
   });
 
   const [activePortrait, setActivePortrait] = useState(false);
 
-  const selectVideo = (title, videoUrl, description) => {
-    setActiveVideo({ title, videoUrl, description });
+  const selectVideo = (titleVideo, videoUrl, description) => {
+    setActiveVideo({ titleVideo, videoUrl, description });
   };
 
   const handlePortrait = () => {
@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <S.Container className={activePortrait && "activePortrait"}>
       <VideoPlayer
-        title={activeVideo.title}
+        titleVideo={activeVideo.titleVideo}
         description={activeVideo.description}
         videoUrl={activeVideo.videoUrl}
         activePortrait={handlePortrait}
@@ -35,16 +35,21 @@ export default function Home() {
       <S.Main>
         <S.ListContainer>
           {playlist.map((item) => (
-            <div>
+            <div key={i}>
               <S.Box
                 key={item.id}
                 onClick={() =>
-                  selectVideo(item.title, item.videoUrl, item.description)
+                  selectVideo(item.titleVideo, item.videoUrl, item.description)
                 }
               >
-                <Image width={300} height={100} src={item.thumb} />
+                <Image
+                  width={300}
+                  height={100}
+                  alt={item.titleVideo}
+                  src={item.thumb}
+                />
                 <S.Description>
-                  <h3>{item.title}</h3>
+                  <h3>{item.titleVideo}</h3>
                   <span>{item.channel}</span>
                   <p>
                     {item.views} - {item.updateData}

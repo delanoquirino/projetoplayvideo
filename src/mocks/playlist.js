@@ -1,7 +1,7 @@
 export const playlist = [
   {
     id: 1,
-    title: "Natureza Incrivel",
+    titleVideo: "Natureza Incrivel",
     channel: "Canal 1",
     views: "20 mil",
     updateData: "há 4 dias",
@@ -13,7 +13,7 @@ export const playlist = [
   },
   {
     id: 2,
-    title: "As melhores paisagens pelo mundo!",
+    titleVideo: "As melhores paisagens pelo mundo!",
     channel: "Canal 2",
     views: "90 mil",
     updateData: "há 16 horas",
@@ -25,7 +25,7 @@ export const playlist = [
   },
   {
     id: 3,
-    title: "Mar em furia",
+    titleVideo: "Mar em furia",
     channel: "Canal 3",
     views: "106 mil",
     updateData: "há 6 dias",
@@ -37,7 +37,7 @@ export const playlist = [
   },
   {
     id: 4,
-    title: "Planet Space Effect",
+    titleVideo: "Planet Space Effect",
     channel: "Canal 4",
     views: "423 mil",
     updateData: "Transmitindo",
@@ -49,7 +49,7 @@ export const playlist = [
   },
   {
     id: 5,
-    title: "Animal Health",
+    titleVideo: "Animal Health",
     channel: "Canal 5",
     views: "167 mil",
     updateData: "há 5 dias",
@@ -61,7 +61,7 @@ export const playlist = [
   },
   {
     id: 6,
-    title: "Titulo do Video 6",
+    titleVideo: "Titulo do Video 6",
     channel: "Canal 6",
     views: "300 mil",
     updateData: "há 10 dias",
@@ -73,7 +73,7 @@ export const playlist = [
   },
   {
     id: 7,
-    title: "Pets animais",
+    titleVideo: "Pets animais",
     channel: "Canal 7",
     views: "150 mil",
     updateData: "há 30 dias",

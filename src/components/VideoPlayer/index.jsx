@@ -17,7 +17,7 @@ import { useVideoPlayer } from "../../hooks/useVideoPlayer";
 import * as S from "./styles";
 
 export const VideoPlayer = ({
-  title,
+  titleVideo,
   videoUrl,
   description,
   activePortrait,
@@ -42,7 +42,7 @@ export const VideoPlayer = ({
       speed: 1,
       isMuted: false,
     });
-  }, [videoUrl, title, description]);
+  }, [videoUrl, titleVideo, description]);
 
   return (
     <S.Container>
@@ -128,7 +128,7 @@ export const VideoPlayer = ({
 
         <S.Info>
           <S.Title>
-            <h2>{title}</h2>
+            <h2>{titleVideo}</h2>
           </S.Title>
           <S.Description>
             <p>{description}</p>
