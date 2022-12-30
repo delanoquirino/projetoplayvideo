@@ -18,8 +18,7 @@ export const playlist = [
     views: "90 mil",
     updateData: "há 16 horas",
     category: "natureza",
-    thumb:
-      "https://i.ytimg.com/vi/TJmprm1DVr0/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBPAMnGRyrHL8D-OfRNzHeW5M9KsA",
+    thumb: "/paisagens-pelo-mundo.webp",
     videoUrl: "/paisagens-pelo-mundo.mp4",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad ex excepturi debitis quas magnam. Odit, in! Repellendus, minus inventore doloribus officia quasi vero expedita optio ut provident impedit maiores dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, maiores obcaecati! Praesentium eaque numquam sunt nemo error asperiores eveniet laboriosam fugiat a. Voluptatum sit nulla consectetur nobis recusandae error expedita! ",
@@ -43,8 +42,7 @@ export const playlist = [
     views: "423 mil",
     updateData: "Transmitindo",
     category: "planeta",
-    thumb:
-      "https://i.ytimg.com/vi/IlVepwP5hv4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAZH05ANHfOkbgUhVQXs8OP6-RHBQ",
+    thumb: "/planet-space.webp",
     videoUrl: "/planet-space.webm",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad ex excepturi debitis quas magnam. Odit, in! Repellendus, minus inventore doloribus officia quasi vero expedita optio ut provident impedit maiores dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, maiores obcaecati! Praesentium eaque numquam sunt nemo error asperiores eveniet laboriosam fugiat a. Voluptatum sit nulla consectetur nobis recusandae error expedita! ",
@@ -56,8 +54,7 @@ export const playlist = [
     views: "167 mil",
     updateData: "há 5 dias",
     category: "animais",
-    thumb:
-      "https://i.ytimg.com/vi/CY0O03pTnT4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBXEgUCsb5VjCv8KUU1Rk0PymtqnA",
+    thumb: "/pets.webp",
     videoUrl: "/pets.mp4",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad ex excepturi debitis quas magnam. Odit, in! Repellendus, minus inventore doloribus officia quasi vero expedita optio ut provident impedit maiores dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, maiores obcaecati! Praesentium eaque numquam sunt nemo error asperiores eveniet laboriosam fugiat a. Voluptatum sit nulla consectetur nobis recusandae error expedita! ",
@@ -69,8 +66,7 @@ export const playlist = [
     views: "300 mil",
     updateData: "há 10 dias",
     category: "planeta",
-    thumb:
-      "https://i.ytimg.com/an_webp/8cXdI3sQAPo/mqdefault_6s.webp?du=3000&sqp=COjuup0G&rs=AOn4CLAqXxhDYCc-CTz6UImG8EWc55K_2g",
+    thumb: "/earth-planet.webp",
     videoUrl: "earth-planet.mp4",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad ex excepturi debitis quas magnam. Odit, in! Repellendus, minus inventore doloribus officia quasi vero expedita optio ut provident impedit maiores dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, maiores obcaecati! Praesentium eaque numquam sunt nemo error asperiores eveniet laboriosam fugiat a. Voluptatum sit nulla consectetur nobis recusandae error expedita! ",
@@ -82,8 +78,7 @@ export const playlist = [
     views: "150 mil",
     updateData: "há 30 dias",
     category: "animais",
-    thumb:
-      "https://i.ytimg.com/vi/CHUbc76FJlY/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDpcI4DyTtQJlvG0dASESF57csXiw",
+    thumb: "/animais-pet.webp",
     videoUrl: "animais-pet.mp4",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad ex excepturi debitis quas magnam. Odit, in! Repellendus, minus inventore doloribus officia quasi vero expedita optio ut provident impedit maiores dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, maiores obcaecati! Praesentium eaque numquam sunt nemo error asperiores eveniet laboriosam fugiat a. Voluptatum sit nulla consectetur nobis recusandae error expedita! ",

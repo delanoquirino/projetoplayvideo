@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import Image from "next/image";
 
 import { VideoPlayer } from "../components/VideoPlayer";
 import { playlist } from "../mocks/playlist";
@@ -41,7 +42,7 @@ export default function Home() {
                   selectVideo(item.title, item.videoUrl, item.description)
                 }
               >
-                <img src={item.thumb} />
+                <Image width={300} height={100} src={item.thumb} />
                 <S.Description>
                   <h3>{item.title}</h3>
                   <span>{item.channel}</span>
