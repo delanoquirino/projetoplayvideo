@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   height: 100vh;
   width: 100%;
-
+  max-width: 100vw;
   @media (max-width: 1224px) {
     flex-direction: column;
   }
@@ -14,7 +14,6 @@ export const Main = styled.div`
   display: flex;
   flex-direction: row;
   font-size: 70%;
-  width: max-content;
   a {
     text-decoration: none;
   }

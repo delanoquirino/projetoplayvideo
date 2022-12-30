@@ -7,9 +7,11 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     background-color: #0f0f0f;
-    
+  
   }
-
+  .activePortrait {
+    flex-direction: column;
+  }
   @media (max-width: 1024px) {
     html {
       font-size: 88.5%;

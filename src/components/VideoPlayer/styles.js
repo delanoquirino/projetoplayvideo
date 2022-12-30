@@ -5,6 +5,7 @@ export const Container = styled.div`
   justify-content: center;
   margin-top: 1rem;
   height: 100vh;
+
   @media (max-width: 1024px) {
     width: 100%;
   }
@@ -16,6 +17,12 @@ export const VideoWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
+  width: 100%;
+  video {
+    width: 100%;
+    height: 663px;
+    object-fit: cover;
+  }
 
   @media (max-width: 1350px) {
     width: 100%;
@@ -27,13 +34,12 @@ export const Progress = styled.input`
 `;
 
 export const Controls = styled.div`
-  background-color: transparent;
   display: flex;
   align-items: center;
-  flex-direction: row;
   justify-content: space-between;
-  padding: 5px;
+
   width: 100%;
+
   div {
     display: flex;
     gap: 10px;
@@ -53,7 +59,6 @@ export const Volume = styled.button`
   border: none;
   display: flex;
   align-items: center;
-  margin-right: 20rem;
 
   input {
     visibility: hidden;
@@ -83,6 +88,7 @@ export const Speed = styled.div`
 export const FullScreen = styled.button`
   background-color: transparent;
   border: none;
+  padding: 0;
 `;
 
 export const Info = styled.div`
